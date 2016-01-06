@@ -3,4 +3,12 @@
 {% block content %}
 <h3>판매점: {{ store.name }}</h3>
 <h3>주소: {{ store.address }}</h3>
+
+<div id="naver_map" style="border: 1px solid #000; width: 500px; height: 400px; margin: 20px;"></div>
+
+<script>
+	$(document).ready(function(){
+		loadNaverMap(37.48121, 126.952712);
+	})
+</script>
 {% endblock %}
