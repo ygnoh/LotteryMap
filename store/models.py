@@ -7,4 +7,4 @@ from django.db import models
 class Store(models.Model):
 	name = models.CharField(max_length=30)
 	address = models.TextField(max_length=200)
-	created_at = models.DataTimeField(auto_now_add=True)
+	created_at = models.DateTimeField(auto_now_add=True)
